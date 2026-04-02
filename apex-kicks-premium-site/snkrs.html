@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNKRS — APEX KICKS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="snkrs">
+  <div class="topbar">
+    <div class="container">
+      <div>Free premium delivery on orders over $300</div>
+      <div class="topbar-links">
+        <a href="new-featured.html">New & Featured</a>
+        <a href="sale.html">Sale</a>
+        <a href="snkrs.html">SNKRS</a>
+        <a href="cart.html">Bag</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">A</div>
+        <div>APEX KICKS</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="new-featured.html">New & Featured</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="sale.html">Sale</a>
+        <a href="snkrs.html">SNKRS</a>
+      </nav>
+
+      <div class="nav-actions">
+        <label class="search">
+          <span>⌕</span>
+          <input type="text" placeholder="Search silhouettes">
+        </label>
+        <a class="icon-btn" href="cart.html" aria-label="Cart">
+          👜
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-banner alt-snkrs">
+        <div class="content">
+          <div class="eyebrow">SNKRS · curated collection</div>
+          <h1>SNKRS</h1>
+          <p>Launch-inspired section for louder pairs, exclusive-feeling releases and drop-focused storytelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container shop-layout">
+      <aside class="sidebar">
+        <h3>Filter styles</h3>
+        <div class="filter-group">
+          <label>Search</label>
+          <input type="search" placeholder="Search by style or brand" data-filter-search>
+        </div>
+        <div class="filter-group">
+          <label>Brand</label>
+          <select data-filter-brand>
+            <option value="all">All brands</option>
+            <option value="noctra">Noctra</option>
+            <option value="aerion">Aerion</option>
+            <option value="streetcore">Streetcore</option>
+            <option value="velaro">Velaro</option>
+            <option value="nova">Nova</option>
+            <option value="solace">Solace</option>
+            <option value="glowline">Glowline</option>
+            <option value="vertex">Vertex</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Gender</label>
+          <select data-filter-gender>
+            <option value="all">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Max price</label>
+          <input type="range" min="120" max="240" value="240" data-filter-price>
+          <div class="range-value" data-price-value>Up to $240</div>
+        </div>
+      </aside>
+
+      <div>
+        <div class="list-toolbar">
+          <div>
+            <h2 style="margin:0;font-size:34px;letter-spacing:-.04em">SNKRS</h2>
+            <div class="results-count" data-results-count>0 styles</div>
+          </div>
+          <div class="chips">
+            <span class="chip">Free delivery $300+</span>
+            <span class="chip">30-day returns</span>
+          </div>
+        </div>
+        <div class="product-grid" data-listing-grid></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px">
+          <div class="logo-mark">A</div>
+          <div>APEX KICKS</div>
+        </div>
+        <p>A premium concept sneaker store built for portfolio use: luxury layout, product logic, cart, localStorage and a mock payment experience.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="new-featured.html">New & Featured</a><br>
+        <a href="men.html">Men</a><br>
+        <a href="women.html">Women</a><br>
+        <a href="sale.html">Sale</a>
+      </div>
+      <div>
+        <h4>Collections</h4>
+        <a href="snkrs.html">SNKRS</a><br>
+        <a href="product.html?id=noctra-phantom-x1">Phantom X1</a><br>
+        <a href="product.html?id=glowline-echo">Glowline Echo</a><br>
+        <a href="product.html?id=nova-luxe-mid">Nova Luxe Mid</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>WhatsApp: +7 777 000 00 00<br>Email: hello@apexkicks.demo<br>Mon–Sun: 10:00–22:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — APEX KICKS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <div class="topbar">
+    <div class="container">
+      <div>Free premium delivery on orders over $300</div>
+      <div class="topbar-links">
+        <a href="new-featured.html">New & Featured</a>
+        <a href="sale.html">Sale</a>
+        <a href="snkrs.html">SNKRS</a>
+        <a href="cart.html">Bag</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">A</div>
+        <div>APEX KICKS</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="new-featured.html">New & Featured</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="sale.html">Sale</a>
+        <a href="snkrs.html">SNKRS</a>
+      </nav>
+
+      <div class="nav-actions">
+        <label class="search">
+          <span>⌕</span>
+          <input type="text" placeholder="Search silhouettes">
+        </label>
+        <a class="icon-btn" href="cart.html" aria-label="Cart">
+          👜
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  
+<main>
+  <section class="section" style="padding-top:34px">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Bag & Checkout</h2>
+          <p>The payment button below is intentionally a mock flow. It looks real for presentation, but no bank is connected.</p>
+        </div>
+      </div>
+      <div class="cart-layout">
+        <section class="cart-list" data-cart-items></section>
+        <aside class="checkout-card">
+          <h3 style="margin:0 0 18px;font-size:28px">Order summary</h3>
+          <div data-cart-summary></div>
+
+          <div class="payment-box">
+            <div style="font-weight:800;font-size:18px;margin-bottom:10px">Demo payment</div>
+            <div class="field">
+              <label>Cardholder</label>
+              <input type="text" name="name" placeholder="Ayan B.">
+            </div>
+            <div class="field">
+              <label>Card number</label>
+              <input type="text" name="card" placeholder="4242 4242 4242 4242">
+            </div>
+            <div class="field">
+              <label>Payment method</label>
+              <select>
+                <option>Visa</option>
+                <option>Mastercard</option>
+                <option>Apple Pay</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" style="width:100%;margin-top:6px" data-fake-pay>Pay now</button>
+            <div class="mini-note" style="margin-top:12px">Demo only. In a real client project this button would call a secure backend, create an order and open a payment widget or provider page.</div>
+            <div data-payment-success></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px">
+          <div class="logo-mark">A</div>
+          <div>APEX KICKS</div>
+        </div>
+        <p>A premium concept sneaker store built for portfolio use: luxury layout, product logic, cart, localStorage and a mock payment experience.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="new-featured.html">New & Featured</a><br>
+        <a href="men.html">Men</a><br>
+        <a href="women.html">Women</a><br>
+        <a href="sale.html">Sale</a>
+      </div>
+      <div>
+        <h4>Collections</h4>
+        <a href="snkrs.html">SNKRS</a><br>
+        <a href="product.html?id=noctra-phantom-x1">Phantom X1</a><br>
+        <a href="product.html?id=glowline-echo">Glowline Echo</a><br>
+        <a href="product.html?id=nova-luxe-mid">Nova Luxe Mid</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>WhatsApp: +7 777 000 00 00<br>Email: hello@apexkicks.demo<br>Mon–Sun: 10:00–22:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
